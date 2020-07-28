@@ -25,7 +25,6 @@ for i in range(1,11):
         count += K // N_data[-i]
         K = K % N_data[-i]
         
-
 # Print the result
     
 print(count)
