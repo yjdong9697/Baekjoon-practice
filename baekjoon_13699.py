@@ -11,24 +11,14 @@ def recur(n):
 
     if recur_store[n - 1] == 0:
         recur(n - 1)
-        result = 0
-        for i in range(n):
-            result += recur_store[i] * recur_store[n - 1 - i]
+    
+    result = 0
+    for i in range(n):
+        result += recur_store[i] * recur_store[n - 1 - i]
+
+    recur_store[n] = result
         
-        recur_store[n] = result
-
-        return
-
-    # If exist
-
-    else:
-        result = 0
-        for i in range(n):
-            result += recur_store[i] * recur_store[n - 1 - i]
-
-        recur_store[n] = result
-        
-        return
+    return
 
 
 # Initial setting
