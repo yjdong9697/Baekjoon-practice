@@ -1,3 +1,4 @@
+# Data save
 
 value_save = []
 value = int(input())
@@ -5,6 +6,8 @@ n = value
 value_save.append(value)
 
 happy_check_dicision = True
+
+# Recursion untill repeated twice or result is 1
 
 while True:
     str_n = str(n)
@@ -26,6 +29,8 @@ while True:
         else:
             value_save.append(temp)
             n = temp
+
+# Print result
 
 if happy_check_dicision == True:
     print("HAPPY")
